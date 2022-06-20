@@ -1,0 +1,243 @@
+html
+    {
+    background-image:url("clouds.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    }
+
+head
+    {  
+    font-family:Arial; 
+    }
+
+body{
+    background: white;
+    font-family:Arial;
+    background-image:url("clouds.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+h1{
+    font-size:30px;
+    color: #FFC8AD;
+    text-align:left;
+}
+
+
+
+
+h2{
+    font-family:Arial;
+    font-size:18px;
+}
+
+nav{
+    font-family:Arial;
+    text-align:center;
+    float:right;
+    font-size:40px;
+    padding-right:20px;
+    word-spacing:30px;
+}
+
+.subnav{
+    font-family:Arial;
+    text-align:center;
+    float:center;
+    margin:auto;
+    width:100%;
+    font-size:30px;
+    word-spacing:30px;
+    font-family: "DIN Next LT Pro";
+}
+
+
+p1{
+    font-family:Arial;
+    font-size:16px;
+}
+
+div{
+    border:2px solid transparent;
+}
+
+.myButton {
+	background-color:white;
+	border-radius:0px;
+	display:inline-block;
+	cursor:pointer;
+	color:#FFC8AD;
+	font-family:Monaco;
+	font-size:20px;
+	padding:20px 20px;
+    margin-top:20px;
+    text-align: center;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#b50000;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.center {
+  margin: auto;
+  width: 100%;
+    text-align: center;
+  padding: 10px;
+}
+
+a.one:link {color:#b50000;text-decoration:none;}
+a.one:visited {color:#b50000;text-decoration:none;}
+a.one:hover {text-decoration:none; color:#FFC8AD}
+
+a.two:link {color:#b50000;text-decoration:none;}
+a.two:visited {color:#b50000;text-decoration:none;}
+a.two:hover {text-decoration:none; color:#FFC8AD}
+
+a.three:link {color:#b50000;text-decoration:none;}
+a.three:visited {color:#b50000;text-decoration:none;}
+a.three:hover {text-decoration:none; color:#FFC8AD}
+
+a.four:link {color:#b50000;text-decoration:none;}
+a.four:visited {color:#b50000;text-decoration:none;}
+a.four:hover {text-decoration:none; color:#FFC8AD}
+
+a.five:link {color:#b50000;text-decoration:none;}
+a.five:visited {color:#b50000;text-decoration:none;}
+a.five:hover {text-decoration:none; color:#FFC8AD}
+
+a.six:link {color:#b50000;text-decoration:none;}
+a.six:visited {color:#b50000;text-decoration:none;}
+a.six:hover {text-decoration:none; color:#FFC8AD} 
+
+a.seven:link {color:#b50000;text-decoration:none;}
+a.seven:visited {color:#b50000;text-decoration:none;}
+a.seven:hover {text-decoration:none; color:#FFC8AD} 
+
+.container {
+    margin:auto auto;
+    width:90%;
+}
+
+main{
+    display: grid;
+    grid: repeat(4,250px) / repeat(2,1fr);
+    gap: 5rem;
+    font-family:Arial;
+}
+
+item1{grid-area: 1/1/2/2;height: 100%;}
+
+item2{grid-area: 1/2/2/3;height: 100%;}
+
+item3{grid-area: 2/1/3/2;height: 100%;}
+
+item4{grid-area: 2/2/3/3;height: 100%;}
+
+item5{grid-area: 3/1/4/2;height: 100%;}
+
+item6{grid-area: 3/2/4/3;height: 100%;}
+
+item7{grid-area: 4/1/5/2;height: 100%;}
+
+item8{grid-area: 4/2/5/3;height: 100%;}
+
+
+@media only screen and (max-width:850px) {main{display: grid; grid: repeat(8,250px) / repeat(1,1fr); gap: 5rem; font-family:Arial;}}
+
+
+
+div.content {max-width:100%}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+
+table, th, td {
+  border: 1px transparent;
+}
+
+table {
+  width: 100%;
+}
+
+.fullwrap {
+    position: relative;
+    max-width:auto;
+    max-height:auto;
+}
+
+.fullwrap img {
+    box-sizing:border-box;
+    border: transparent;
+    width:100%;
+    height: 100%;
+}
+
+.fullcap {
+    box-sizing: border-box;
+    border: transparent;
+    width: 100%;
+    height: 99%;
+    
+    position: absolute;
+    top: 0; left: 0;
+    text-align: center;
+    padding-top: 20%;
+        
+    background-color: rgba(0,0,0,0.3);
+    color:white;
+    padding-left:10px;
+    padding-right:10px;
+    font-family: monaco; 
+}
+
+.fullcap{
+    visibility: none; opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.fullwrap:hover .fullcap {
+    visibility: visible; opacity: 1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: none;
+    column-gap:20px;
+    grid-row-gap: 20px;
+    grid-gap:20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
